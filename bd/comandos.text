@@ -1,0 +1,11 @@
+sudo su
+mysql -u root
+
+CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+
+GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost';
+
+GRANT GRANT OPTION ON *.* TO 'user'@'localhost';
+FLUSH PRIVILEGES;
+exit
+

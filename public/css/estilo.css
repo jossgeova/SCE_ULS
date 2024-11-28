@@ -1,0 +1,84 @@
+body {
+    margin: 0; /* Elimina el margen predeterminado del navegador */
+    display: flex; /* Usa Flexbox para el diseño de los elementos en el body */
+    background-color: #c8c9c8 !important; /* Color de fondo a todo el body */
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+.contenedor-center {
+    display: flex; /* Usa Flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.section {
+    width: 50%; /* Define el ancho de cada sección como el 50% del contenedor padre */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+.left {
+    background-color:  #165773; /* Color de fondo para la sección izquierda */
+}
+
+.right {
+    background-color: #056e9c; /* Color de fondo para la sección derecha */
+}
+
+@media (max-width: 768px) {
+    .left {
+        display: none; /* Oculta la sección izquierda en pantallas pequeñas */
+    }
+
+    .right {
+        width: 100%; /* La sección derecha ocupará todo el ancho en pantallas pequeñas */
+    }
+
+    .view-contenido {
+        display: block; /* Muestra el contenido en pantallas pequeñas */
+    }
+}
+
+@media (min-width: 769px) {
+    .contenido-login {
+        margin-top: 30%; /* Aplica un margen superior del 30% en pantallas grandes */
+    }
+}
+
+@media (min-width: 769px) {
+    .ocultar-contenido {
+        display: none; /* Oculta el contenido en pantallas grandes */
+    }
+}
+
+.centrar {
+    text-align: center; /* Centra el texto dentro del elemento */
+}
+
+.forminput {
+    width: 300px; /* Define un ancho fijo de 300px para los campos de formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+.btnoff{
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: gray !important;
+}
+
+/* Estilos del footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Altura del footer */
+    background-color: #032c3d; /* Color de fondo del footer */
+    color: white;
+    text-align: center;
+    line-height: 50px; /* Alineación vertical del texto */
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
