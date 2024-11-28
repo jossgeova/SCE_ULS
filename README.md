@@ -1,4 +1,4 @@
-                                SISTEMA DE CONTROL DE EQUIPO
+                                  SISTEMA DE CONTROL DE EQUIPO
 
                                   INGENIERIA DE SOFWARE 2024
                               "UNIVERSIDAD LUTERANA SALVADOREÑA"
